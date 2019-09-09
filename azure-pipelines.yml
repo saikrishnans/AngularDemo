@@ -26,9 +26,9 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.SourcesDirectory)/dist/$(Build.SourcesDirectory)'
+    rootFolderOrFile: 'Adfolks'
     includeRootFolder: true
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.SourcesDirectory).zip'
+    archiveFile: 'Adfolks.zip'
     replaceExistingArchive: true
     verbose: true
