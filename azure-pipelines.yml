@@ -20,6 +20,8 @@ steps:
     npm install -g @angular/cli
     npm install
     ng build --prod
+    cd dist
+    ls
 - task: ArchiveFiles@2
   inputs:
       rootFolderOrFile: '$(Build.BinariesDirectory)/dist/Adfolks'
