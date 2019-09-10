@@ -26,7 +26,7 @@ steps:
     ls
 - task: CopyFiles@2
   inputs:
-    contents: '$(Build.StagingDirectory)/*.*'
+    contents: '$(Build.StagingDirectory)/*'
     targetFolder: $(Build.ArtifactStagingDirectory)
 
 - task: PublishBuildArtifacts@1
